@@ -18,14 +18,13 @@ but it has been moved to a github repository to allow better development
 workflow based access.
 
 * Heltec WiFi LoRa 32 (V3)
-￼
+
 - Price :: $18.90 (from Heltec, Jan 2023)
 - Hardware Package ::
   Included
   - Antenna
   - SH1.25 x 2 battery connector
   - 2 x 54 pin headers (not soldered by default),
-
   Not included
   - Battery
   - Package Notes
