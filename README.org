@@ -8,6 +8,10 @@
   - [[#datasheet][Datasheet]]
   - [[#documentation-and-resources][Documentation and Resources]]
   - [[#heltec-automation-product-documentation][Heltec Automation Product Documentation]]
+  - [[#lora-radio-hardware][LoRa Radio Hardware]]
+  - [[#software-development-libraries][Software Development Libraries]]
+- [[#issues][Issues]]
+  - [[#wifi_lora_32_-v3-bootloop-with-version-007-of-arduino-dev-kit][Wifi_Lora_32_ v3 bootloop with version 0.0.7 of Arduino Dev Kit]]
 
 * Introduction
 The following is mostly taken from the Heltec Automation webpage on the WiFi
@@ -130,7 +134,8 @@ YouTube:click to play
     The Heltec WiFi Lora 32 (V3) board was first made available for public sale on 15 September 2022.
     MCU is changed from ESP32-D0WDQ6 to ESP32-S3FN8. Specific differences of MCU are shown in：https://products.espressif.com/#/product-comparison.
 
-#+CAPTION: Differences between ESP32-D0WDQ6 (used in V2) and ESP32-S3FN8 (used in V3).
+Differences between ESP32-D0WDQ6 (used in V2) and ESP32-S3FN8 (used in V3).
+
 |----------------------+------------------------------+------------------------------|
 |                      | ESP32-D0WDQ6                 | ESP32-S3FN8                  |
 |----------------------+------------------------------+------------------------------|
@@ -170,3 +175,52 @@ YouTube:click to play
 | BT Certification     |                              | BT SIG                       |
 |----------------------+------------------------------+------------------------------|
 
+Comparison of Bluetooth BR/EDR and Bluetooth LE Specifications (Wolfram MathWorks Help Center)
+
+USB interface changed from Micro USB to Type-C.
+
+LoRa chip changed from SX1276 to SX1262.
+
+The LoRa crystal oscillator is upgraded to temperature compensated crystal oscillator.
+
+The size, appearance, pin layout and power pins remain unchanged, but the GPIO sequence has changed. Please refer to Pinout diagram.
+
+*** Processor Datasheet
+
+[[file:esp32-s3_datasheet_en.pdf]]
+
+** LoRa Radio Hardware
+LoRa chip changed from SX1276 to SX1262. The main differences are:
+
+The operating frequency range is larger: SX1262 has range 150~960HMZ, and the
+SX1276 is only available in 868/915 MHz;
+
+The SX1262 also uses a high-precision TCXO crystal oscillator to provide more
+precise and stable control during the operation.
+
+Ultra-low-consumption receiving current, SX1278 receiving current is 10.8mA, SX1262 receiving current <6.5mA.
+
+LoRa in V2: https://www.semtech.com/products/wireless-rf/lora-connect/sx1276
+
+LoRa in V3: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262
+
+** Software Development Libraries
+Add the following line in Arduino IDE to import platform definitions.
+
+https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series
+
+https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.7/package_heltec_esp32_index.json
+Based in Expressif ESP32 Libraries – https://github.com/espressif/arduino-esp32
+
+* Issues
+** Wifi_Lora_32_ v3 bootloop with version 0.0.7 of Arduino Dev Kit
+*** *TL;DR*
+The Heltec Arduino development kit (0.0.7) causes the board to go into a
+bootloop. The cause of this is known and has been fixed upstream in the
+Expressif development tools. Downgrading the bootloader image or the programming
+software fixes this problem.
+
+*** References
+WiFi Kit Issue – https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/issues/159
+
+Expressif Arduino ESP32 Github – https://github.com/espressif/arduino-esp32/issues/6980 This page describes what was found when investigating the issue.
