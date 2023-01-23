@@ -14,6 +14,9 @@
   - [[#jan-2023][Jan 2023]]
 
 * Introduction
+
+[[file:images/LORA320-V3.png]]
+
 The following is mostly taken from the Heltec Automation webpage on the WiFi
 LoRa 32 (V3) developer board, but with ‘fixes’. For definitive details, please
 refer to the original web page. (Changes have been made to improve readability
@@ -214,17 +217,13 @@ Based in Expressif ESP32 Libraries – https://github.com/espressif/arduino-esp3
 
 * Issues
 ** Jan 2023
-**** OUTSTANDING - Heltec Development Kit for Arduino does not contain entry for V3
+**** /OUTSTANDING/ - Heltec Development Kit for Arduino does not contain entry for V3
 Apparently this is being addressed.
 
 **** /ONGOING/ - Wifi_Lora_32_ v3 bootloop with version 0.0.7 of Arduino Dev Kit
-***** *TL;DR*
-The Heltec Arduino development kit (0.0.7) causes the board to go into a
-bootloop. The cause of this is known and has been fixed upstream in the
-Expressif development tools. Downgrading the bootloader image or the programming
-software fixes this problem.
+*TL;DR* The Heltec Arduino development kit (0.0.7) causes the board to go into a bootloop. The cause of this is known and has been fixed upstream in the Expressif development tools. Downgrading the bootloader image or the programming software fixes this problem.
 
-***** References
-WiFi Kit Issue – https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/issues/159
-
-Expressif Arduino ESP32 Github – https://github.com/espressif/arduino-esp32/issues/6980 This page describes what was found when investigating the issue.
+References
+- WiFi Kit Issue – https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/issues/159
+    
+- Expressif Arduino ESP32 Github – https://github.com/espressif/arduino-esp32/issues/6980 This page describes what was found when investigating the issue.
