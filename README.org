@@ -130,6 +130,7 @@ YouTube:click to play
     The Heltec WiFi Lora 32 (V3) board was first made available for public sale on 15 September 2022.
     MCU is changed from ESP32-D0WDQ6 to ESP32-S3FN8. Specific differences of MCU are shown in：https://products.espressif.com/#/product-comparison.
 
+#+CAPTION: Differences between ESP32-D0WDQ6 (used in V2) and ESP32-S3FN8 (used in V3).
 |----------------------+------------------------------+------------------------------|
 |                      | ESP32-D0WDQ6                 | ESP32-S3FN8                  |
 |----------------------+------------------------------+------------------------------|
