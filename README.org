@@ -19,19 +19,20 @@
 
 The following is mostly taken from the Heltec Automation webpage on the WiFi
 LoRa 32 (V3) developer board, but with ‘fixes’. For definitive details, please
-refer to the original web page. (Changes have been made to improve readability
+refer to the [[https://heltec.org/project/wifi-lora-32-v3][original web page]]. (Changes have been made to improve readability
 and add details useful for developers.)
 
 This board is planned to be included in a major hardware project, and this
 information will assist with development and maintenance.
 
-This information was initially hosted on a page at [[mawsonlakes.org][MawsonLakes.Org]] (WorkPress),
+This information was initially hosted on a page at [[https://mawsonlakes.org][MawsonLakes.Org]] (WorkPress),
 but it has been moved to a github repository to allow better development
 workflow based access.
 
 * Heltec WiFi LoRa 32 (V3)
 
-- Price : $18.90 (from Heltec, Jan 2023)
+- [[https://heltec.org/project/wifi-lora-32-v3/][Product Page]]
+- Price : US18.90 (from Heltec, Jan 2023)
 - What's in the Package
 
   Included
@@ -53,8 +54,8 @@ connected but outside of the enclosure.
 - Battery: 3.7V/1000mAh Lithium (Sale only available inside mainland China)
 - Cooling rib
 - Antenna
-- Bread Board
-- Plastic shell
+- [[https://heltec.org/product/bread-board][Bread Board]]
+- [[https://heltec.org/product/lora-32-shell][Plastic shell]]
 
 Categories: ESP Arduino, LoRa Node SKU: ZC-153-868-1
 
@@ -75,12 +76,21 @@ WiFi LoRa 32 (V3) is a member of the “Heltec LoRa“ series, with the followin
 - *LoRa Radio:* SX1262 LoRa node chip.
 - *Type-C USB interface:* Includes voltage regulator, ESD protection, short
   circuit protection, and RF shielding.
-- *Onboard SH1.25-2 battery interface:* Includes integrated lithium battery management system (charge and discharge management, overcharge protection, battery power detection, USB / battery power automatic switching).
-- *Integrated WiFi, LoRa, Bluetooth:* Onboard Wi-Fi, Bluetooth dedicated 2.4GHz metal spring antenna. IPEX (U.FL) interface for external LoRa antenna.
-- *OLED Display:* Onboard 0.96-inch 128*64 dot matrix OLED display. (This can be used to display debugging information, battery power, and other information.)
-- *Integrated CP2102 USB to serial port chip:* Use of convenient (re)programming, and printing debugging information.
-- Support available for the *Arduino development environment*.
-- Downloadable ESP32 + LoRaWAN Arduino® library. This uses the standard LoRaWAN protocol that can communicate with LoRa gateways running the LoRaWAN protocol. To make this code run, a unique license is needed. it can be found on this page.
+- *Onboard SH1.25-2 battery interface:* Includes integrated lithium battery
+  management system (charge and discharge management, overcharge protection,
+  battery power detection, USB / battery power automatic switching).
+- *Integrated WiFi, LoRa, Bluetooth:* Onboard Wi-Fi, Bluetooth dedicated 2.4GHz
+  metal spring antenna. IPEX (U.FL) interface for external LoRa antenna.
+- *OLED Display:* Onboard 0.96-inch 128*64 dot matrix OLED display. (This can be
+  used to display debugging information, battery power, and other information.)
+- *Integrated CP2102 USB to serial port chip:* Use of convenient (re)programming,
+  and printing debugging information.
+- Support available for the [[https://heltec.org/wifi_kit_install][Arduino development environment]].
+- Downloadable [[https://github.com/HelTecAutomation/ESP32_LoRaWAN][ESP32 + LoRaWAN Arduino® library]]. This uses the standard LoRaWAN
+  protocol that can communicate with LoRa gateways running the LoRaWAN protocol.
+  To make this code run, a unique license is needed. it can be found on [[https://resource.heltec.cn/search/][this
+  page]]. /(Development on this library has been discontinued.)/
+- /NEW/ Arduino Development Environment (0.0.7) - [[https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series]]
 
 ** Datasheet
 
@@ -127,15 +137,17 @@ https://www.rosietheredrobot.com/2020/02/battle-of-bletain.html
 ***  User Test Info Report
 General test report: https://robotzero.one/heltec-wifi-lora-32/
 Communication distance test:
-YouKu: click to play
-YouTube:click to play
+- YouKu:   [[http://v.youku.com/v_show/id_XNDAwOTUyMTI3Ng==.html?spm=a2h3j.8428770.3416059.1][click to play video]]
+- YouTube: [[https://youtu.be/sUsJuhakQ0E][click to play video]]
 
 ** Heltec Automation Product Documentation
-- ESP32 + LoRa Node
-  - Hardware Log – V3
+ESP32 + LoRa Node
+- [[https://github.com/PaulSchulz/heltec-wifi-lora-32-v3][Hardware Log]] -> [[https://docs.heltec.org/en/node/esp32/dev-board/hardware_update_log.html#v3][V3]]
 
-    The Heltec WiFi Lora 32 (V3) board was first made available for public sale on 15 September 2022.
-    MCU is changed from ESP32-D0WDQ6 to ESP32-S3FN8. Specific differences of MCU are shown in：https://products.espressif.com/#/product-comparison.
+The Heltec WiFi Lora 32 (V3) board was first made available for public sale on
+15 September 2022. MCU is changed from ESP32-D0WDQ6 to ESP32-S3FN8. Specific
+differences of MCU are shown in：
+https://products.espressif.com/#/product-comparison.
 
 Differences between ESP32-D0WDQ6 (used in V2) and ESP32-S3FN8 (used in V3).
 
