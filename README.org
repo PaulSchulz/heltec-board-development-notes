@@ -2,6 +2,7 @@
 
 * Table of Contents :TOC:
 - [[#introduction][Introduction]]
+- [[#heltec-wifi-lora-32-v3][Heltec WiFi LoRa 32 (V3)]]
 
 * Introduction
 The following is mostly taken from the Heltec Automation webpage on the WiFi
@@ -12,3 +13,25 @@ and add details useful for developers.)
 This board is planned to be included in a major hardware project, and this
 information will assist with development and maintenance.
 
+This information was initially hosted on a page at [[mawsonlakes.org][MawsonLakes.Org]] (WorkPress),
+but it has been moved to a github repository to allow better development
+workflow based access.
+
+* Heltec WiFi LoRa 32 (V3)
+￼
+- Price :: $18.90 (from Heltec, Jan 2023)
+- Hardware Package ::
+  Included
+  - Antenna
+  - SH1.25 x 2 battery connector
+  - 2 x 54 pin headers (not soldered by default),
+
+  Not included
+  - Battery
+  - Package Notes
+
+When purchased with the shell, the pin headers are soldered underneath the
+board. The glue stick antenna is too long to fit inside the shell, and will be
+connected but outside of the enclosure.
+
+- LoRa Bands :: 470-510MHz, 863-870MHz, *902-928MHz* (band in use)
