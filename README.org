@@ -59,7 +59,7 @@ connected but outside of the enclosure.
 
 Categories: ESP Arduino, LoRa Node SKU: ZC-153-868-1
 
-Tags: ArduinoESP32LoRa NodeLoRaWAN
+Tags: Arduino ESP32 LoRa Node LoRaWAN
 
 The WiFi LoRa 32 (V3) is a classic IoT dev-board designed & produced by Heltec
 Automation. Since its launch in 2017, it has been loved by developers and
@@ -104,10 +104,12 @@ https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series
 https://github.com/HelTecAutomation/Heltec_ESP32
 
 *** Schematic Diagram
-https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3_Schematic_Diagram.pdf
+- Original: https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3_Schematic_Diagram.pdf
+- Archived: [[docs/HTIT-WB32LA(F)_V3_Schematic_Diagram.pdf]]
 
 *** Pin Map
-https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3.png
+- Original: https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3.png
+- Archived: [[file:docs/HTIT-WB32LAF_V3.png]]
 
 *** Downloadable Resources
 https://resource.heltec.cn/download/WiFi_LoRa32_V3
