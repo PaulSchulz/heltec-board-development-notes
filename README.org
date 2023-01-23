@@ -7,6 +7,7 @@
   - [[#overview][Overview]]
   - [[#datasheet][Datasheet]]
   - [[#documentation-and-resources][Documentation and Resources]]
+  - [[#heltec-automation-product-documentation][Heltec Automation Product Documentation]]
 
 * Introduction
 The following is mostly taken from the Heltec Automation webpage on the WiFi
@@ -76,7 +77,7 @@ WiFi LoRa 32 (V3) is a member of the “Heltec LoRa“ series, with the followin
 
 ** Datasheet
 
-- [[file:docs/HTIT-WB32LA_V3Rev1.1.pdf]] :: Datasheet
+- [[file:docs/HTIT-WB32LA_V3Rev1.1.pdf]] : Datasheet
 
 ** Documentation and Resources
 *** Heltec ESP (ESP 32 & ESP8266) Framework
@@ -101,7 +102,7 @@ https://lora.heltec.org/
 
 https://heltec-automation-docs.readthedocs.io/en/latest/esp32/frequently_asked_questions.html
 
-404 – Page does not exist
+(This link currently returnes: 404 – Page does not exist)
 
 *** Interesting Applicatons made by WiFi LoRa 32
 - Paxcounter： https://github.com/cyberman54/ESP32-Paxcounter
@@ -115,3 +116,56 @@ https://www.rosietheredrobot.com/2019/04/lora-wan-kenobi.html
 https://www.rosietheredrobot.com/2020/02/battle-of-bletain.html
 - LoRa sensor node config & usage video: https://youtu.be/YJwjZOkhdD8 https://youtu.be/8-bIp66ON1I
 - Single-channel LoRa gateway solution: https://github.com/things4u/ESP-1ch-Gateway-v5.0
+
+***  User Test Info Report
+General test report: https://robotzero.one/heltec-wifi-lora-32/
+Communication distance test:
+YouKu: click to play
+YouTube:click to play
+
+** Heltec Automation Product Documentation
+- ESP32 + LoRa Node
+  - Hardware Log – V3
+
+    The Heltec WiFi Lora 32 (V3) board was first made available for public sale on 15 September 2022.
+    MCU is changed from ESP32-D0WDQ6 to ESP32-S3FN8. Specific differences of MCU are shown in：https://products.espressif.com/#/product-comparison.
+
+|----------------------+------------------------------+------------------------------|
+|                      | ESP32-D0WDQ6                 | ESP32-S3FN8                  |
+|----------------------+------------------------------+------------------------------|
+| *Overview*             |                              |                              |
+| Series               | ESP32                        | ESP32-S3                     |
+| CPU                  | Xtensa® dual-core 32-bit LX6 | Xtensa® dual-core 32-bit LX7 |
+| Package (mm)         | QFN48 (66)                   | QFN56(77)                    |
+| Dimensions (mm)      | 6*6                          | 7*7                          |
+| Voltage (V)          | 2.3 ~ 3.6                    | 3.0 ~ 3.6                    |
+| Temp. (degC)         | -40 ~ 125                    | -40 ~ 85                     |
+| Status               | NRND                         | Mass Production              |
+| ECO                  | ECO V1                       | standard version             |
+|                      |                              |                              |
+| *Wireless*             |                              |                              |
+| Bluetooth            | BR/EDR + Bluetooth LE v4.2   | Bluetooth LE v5.0            |
+|                      |                              |                              |
+| *Memory*               |                              |                              |
+| SRAM (KB)            | 520                          | 512                          |
+| ROM (KB)             | 448                          | 384                          |
+| Flash (MB)           | 0                            | 8                            |
+|                      |                              |                              |
+| *Peripherals*          |                              |                              |
+| ADC                  | 2*12-bit ADC, 18 channels    | 2*12-bit ADC, 20 channels    |
+| DAC                  | DAC                          | 0                            |
+| Touch                | 10                           | 14                           |
+| Temp Sensor          | 0                            | 1                            |
+| GPIO                 | 34                           | 45                           |
+| Strapping GPIO       | 0, 2, 5, 12, 15              | 0, 3, 45, 46                 |
+| GPIO for flash/PSRAM | 6, 7, 8, 9, 10, 11 /         | 27, 28, 29, 30, 31, 32 /     |
+| SDIO HOST            | 1                            | 2                            |
+| LED PWM              | 2*8 channels                 | 1*8 channels                 |
+| USB OTG              | 0                            | 1                            |
+| Hall                 | 1                            | 0                            |
+| Ethernet             | 1                            | 0                            |
+|                      |                              |                              |
+| *Certification*        |                              |                              |
+| BT Certification     |                              | BT SIG                       |
+|----------------------+------------------------------+------------------------------|
+
