@@ -4,6 +4,9 @@
 - [[#introduction][Introduction]]
 - [[#heltec-wifi-lora-32-v3][Heltec WiFi LoRa 32 (V3)]]
   - [[#other-assessories][Other Assessories]]
+  - [[#overview][Overview]]
+  - [[#datasheet][Datasheet]]
+  - [[#documentation-and-resources][Documentation and Resources]]
 
 * Introduction
 The following is mostly taken from the Heltec Automation webpage on the WiFi
@@ -56,3 +59,59 @@ version and retains Wi-Fi, BLE, LoRa, and the OLED display.
 
 This board is the best option for smart cities, farms, homes, industrial
 control, house security, wireless meter reading, and IoT developers.
+
+** Overview
+WiFi LoRa 32 (V3) is a member of the “Heltec LoRa“ series, with the following features:
+
+- *Microprocessor:* ESP32-S3FN8 (Xtensa® 32-bit LX7 dual-core processor, five-stage pipeline rack Structure, frequency up to 240 MHz).
+- *LoRa Radio:* SX1262 LoRa node chip.
+- *Type-C USB interface:* Includes voltage regulator, ESD protection, short
+  circuit protection, and RF shielding.
+- *Onboard SH1.25-2 battery interface:* Includes integrated lithium battery management system (charge and discharge management, overcharge protection, battery power detection, USB / battery power automatic switching).
+- *Integrated WiFi, LoRa, Bluetooth:* Onboard Wi-Fi, Bluetooth dedicated 2.4GHz metal spring antenna. IPEX (U.FL) interface for external LoRa antenna.
+- *OLED Display:* Onboard 0.96-inch 128*64 dot matrix OLED display. (This can be used to display debugging information, battery power, and other information.)
+- *Integrated CP2102 USB to serial port chip:* Use of convenient (re)programming, and printing debugging information.
+- Support available for the *Arduino development environment*.
+- Downloadable ESP32 + LoRaWAN Arduino® library. This uses the standard LoRaWAN protocol that can communicate with LoRa gateways running the LoRaWAN protocol. To make this code run, a unique license is needed. it can be found on this page.
+
+** Datasheet
+
+- [[file:docs/HTIT-WB32LA_V3Rev1.1.pdf]] :: Datasheet
+
+** Documentation and Resources
+*** Heltec ESP (ESP 32 & ESP8266) Framework
+https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series
+
+*** Heltec ESP32 Library
+https://github.com/HelTecAutomation/Heltec_ESP32
+
+*** Schematic Diagram
+https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3_Schematic_Diagram.pdf
+
+*** Pin Map
+https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3.png
+
+*** Downloadable Resources
+https://resource.heltec.cn/download/WiFi_LoRa32_V3
+
+*** Heltec LoRa Test Server (Based on TTS V3)
+https://lora.heltec.org/
+
+*** Frequently Asked Questions
+
+https://heltec-automation-docs.readthedocs.io/en/latest/esp32/frequently_asked_questions.html
+
+404 – Page does not exist
+
+*** Interesting Applicatons made by WiFi LoRa 32
+- Paxcounter： https://github.com/cyberman54/ESP32-Paxcounter
+- A low-cost LoRa ioT solution：https://github.com/CongducPham/LowCostLoRaGw
+- As a model remote control：http://www.moz8.com/thread-172414-1-1.html?_dsign=4feb6948
+- Used to prevent hay and straw fires： https://www.ibm.com/developerworks/cn/iot/library/iot-lpwan-lora-nodemcu-dhtsensors/
+- WiFi instant camera： https://hackaday.io/project/162256-esp32-8266-wifi-instant-camera
+- morserino (Morse code with a multi-functional morserino device) : http://www.morserino.info/morserino-32.html
+- MicroPython example (IoT examples with many sensors and detail docs):
+https://www.rosietheredrobot.com/2019/04/lora-wan-kenobi.html
+https://www.rosietheredrobot.com/2020/02/battle-of-bletain.html
+- LoRa sensor node config & usage video: https://youtu.be/YJwjZOkhdD8 https://youtu.be/8-bIp66ON1I
+- Single-channel LoRa gateway solution: https://github.com/things4u/ESP-1ch-Gateway-v5.0
