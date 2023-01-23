@@ -113,6 +113,7 @@ https://github.com/HelTecAutomation/Heltec_ESP32
 
 *** Downloadable Resources
 https://resource.heltec.cn/download/WiFi_LoRa32_V3
+- Binaries and installer (esptool) for [[https://meshtastic.org/][meshtastic]] (Modified: 16 Nov 2022)- Windows Version
 
 *** Heltec LoRa Test Server (Based on TTS V3)
 https://lora.heltec.org/
