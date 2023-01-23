@@ -1,0 +1,14 @@
+#+TITLE: Working with the Heltec WiFi LoRa 32 (V3) module
+
+* Table of Contents :TOC:
+- [[#introduction][Introduction]]
+
+* Introduction
+The following is mostly taken from the Heltec Automation webpage on the WiFi
+LoRa 32 (V3) developer board, but with ‘fixes’. For definitive details, please
+refer to the original web page. (Changes have been made to improve readability
+and add details useful for developers.)
+
+This board is planned to be included in a major hardware project, and this
+information will assist with development and maintenance.
+
