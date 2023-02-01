@@ -113,7 +113,7 @@ https://github.com/HelTecAutomation/Heltec_ESP32
 
 *** Pin Map
 - Original: https://resource.heltec.cn/download/WiFi_LoRa32_V3/HTIT-WB32LA(F)_V3.png
-- Archived: [[file:docs/HTIT-WB32LA_V3.pdf]]
+- Archived: [[file:docs/HTIT-WB32LA_V3_pinout.pdf]]
 
 *** Downloadable Resources
 https://resource.heltec.cn/download/WiFi_LoRa32_V3
