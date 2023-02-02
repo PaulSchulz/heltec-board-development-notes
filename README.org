@@ -238,24 +238,32 @@ Based in Expressif ESP32 Libraries – https://github.com/espressif/arduino-esp3
 ** Hardware / Software Interface (Pins)
 See:https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/blob/master/esp32/variants/WIFI_LoRa_32_V3/pins_arduino.h
 
-| *Serial*   |    |                           |
-| TX       | 43 |                           |
-| RX       | 44 |                           |
-|          |    |                           |
-| *SPI*      |    |                           |
-| MOSI     | 11 |                           |
-| MOSO     | 13 |                           |
-| SCK      | 12 |                           |
-| SS       | 10 | Chip select (CS) for LoRa |
-|          |    |                           |
-| *I2C*      |    |                           |
-| SDA_OLED | 17 | i2c_id: a_bus             |
-| SCL_OLED | 18 |                           |
-| RST_OLED | 21 |                           |
-| SDA      | 41 | i2c_id: b_bus             |
-| SCL      | 42 |                           |
-|          |    |                           |
-| LED      | 35 |                           |
+| *Serial*   |     |                                           |
+| TX       |  43 |                                           |
+| RX       |  44 |                                           |
+|          |     |                                           |
+| *SPI*      |     |                                           |
+| MOSI     | 10* | Note 1. (was documented as 11)            |
+| MISO     | 11* | Note 1. (was documented as 13)            |
+| SCK      |  9* | Note 1. (was documented as 12)            |
+| SS       |  8* | Note 1. (was documented as 10)            |
+|          |     | Chip select (CS) for LoRa                 |
+| *I2C*      |     |                                           |
+| SDA_OLED |  17 | i2c_id: a_bus (used by OLED, not exposed) |
+| SCL_OLED |  18 |                                           |
+| RST_OLED |  21 |                                           |
+| SDA      |  41 | i2c_id: b_bus, Note 2.                    |
+| SCL      |  42 | Note 2.                                   |
+|          |     |                                           |
+| LED      |  35 |                                           |
+
+Notes
+
+- Note 1. :: See the definition in [[https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/blob/master/esp32/variants/WIFI_LoRa_32_V3/pins_arduino.h][pins_arduino.h]]. An [[https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/issues/156][issue]] has been raised noting
+that this mapping is actually different to that defined in the library header.
+
+- Note 2. :: The Heltec pinout diagram list pins 41, 42 as MTDI, MTMS
+  respectfully. Not sure what is correct here.
 
 * Issues
 ** Jan 2023
