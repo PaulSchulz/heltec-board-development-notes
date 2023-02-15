@@ -1,0 +1,11 @@
+#+TITLE: Working with the Heltec Wireless Shell (V3)
+
+* Table of Contents :TOC:
+- [[#introduction][Introduction]]
+
+* Introduction
+
+Th Heltec Wireless Shell (V3) (heltec-wireless-shell-v3) is a wireless system
+module designed to be intergrated onto another board and uses integrated Wifi
+(IEEE 802.11 b/g/n, 2.4GHz), Bluetooth 5(LE) and Lora (via the Semtech LoRa
+Transsceiver, SX1262).
