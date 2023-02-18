@@ -1,4 +1,4 @@
-#+TITLE: Working with the Heltec WiFi LoRa 32 (V3) module
+#+TITLE: Working with the Heltec ESP32 Boards (V3)
 
 * Table of Contents :TOC:
 - [[#introduction][Introduction]]
