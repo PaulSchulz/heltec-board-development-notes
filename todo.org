@@ -1,0 +1,22 @@
+#+TITLE: To Do List
+
+* Introduction
+This is a list of things than need to be done, both to update this repository,
+and to use this information to update the various tools that we want to use with
+the Heltec boards.
+
+Tools like:
+- ESPHome configuration
+- The Things Network device registration
+- Arduino compilation tools
+
+The previous boards, based on the ESP32 chip are already supported in some of
+these tools and just need updating.
+
+These have been known issues with the pinout definitions distributed for the
+Arduino libraries.
+
+If you have any suggestions or wish to collaborate on anything mentioned here,
+feel free to email and get in touch.
+
+Paul
