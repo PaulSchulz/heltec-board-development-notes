@@ -16,7 +16,22 @@
   - [[#jan-2023][Jan 2023]]
 
 * Introduction
+Existing boards:
+- heltec_wifi_kit_32 :: 
+- heltec_wifi_kit_32_v2
+- heltec_wifi_lora_32
+- heltec_wifi_lora_32_v2
+- heltec_wireless_stick
+- heltec_wireless_stick_lite
 
+New Boards
+- heltec_wifi_kit_32_v3 :: https://heltec.org/project/wifi-kit-32-v3/
+- heltec_wifi_lora_32_v3 :: https://heltec.org/project/wifi-lora-32-v3/
+- heltec_wireless_stick_v3 :: https://heltec.org/project/wireless-stick-v3/
+- heltec_wireless_stick_lite_v3 :: https://heltec.org/project/wireless-stick-lite-v2/
+- heltec_wireless_shell_v3 :: https://heltec.org/project/wireless-shell-v3/
+
+* Heltec WiFi LoRa 32 (V3)
 [[file:images/LORA320-V3.png]]
 
 The following is mostly taken from the Heltec Automation webpage on the WiFi
@@ -31,7 +46,7 @@ This information was initially hosted on a page at [[https://mawsonlakes.org][Ma
 but it has been moved to a github repository to allow better development
 workflow based access.
 
-* Heltec WiFi LoRa 32 (V3)
+
 
 - [[https://heltec.org/project/wifi-lora-32-v3/][Product Page]]
 - Price : US18.90 (from Heltec, Jan 2023)
