@@ -2,6 +2,7 @@
 
 * Table of Contents :TOC:
 - [[#introduction][Introduction]]
+  - [[#development-tool-support][Development Tool Support]]
 - [[#heltec-wifi-lora-32-v3][Heltec WiFi LoRa 32 (V3)]]
   - [[#other-assessories][Other Assessories]]
   - [[#overview][Overview]]
@@ -31,6 +32,22 @@ New Boards
 - heltec_wireless_stick_lite_v3 :: https://heltec.org/project/wireless-stick-lite-v2/
 - heltec_wireless_shell_v3 :: https://heltec.org/project/wireless-shell-v3/
 
+** Development Tool Support
+| Board                  | Arduino | ESP-IDE | ESPHome |
+|------------------------+---------+---------+---------|
+| wifi_kit_32_v2         |         |         |         |
+| wifi_lora_32           |         |         |         |
+| wifi_lora_32_v2        |         |         |         |
+| wireless_stick         |         |         |         |
+| wireless_stick_lite    |         |         |         |
+|------------------------+---------+---------+---------|
+| wifi_kit_32_v3         |         |         |         |
+| wifi_lora_32_v3        |         |         |         |
+| wireless_stick_v3      |         |         |         |
+| wireless_stick_lite_v3 |         |         |         |
+| wireless_shell_v3      |         |         |         |
+|------------------------+---------+---------+---------|
+
 * Heltec WiFi LoRa 32 (V3)
 [[file:images/LORA320-V3.png]]
 
@@ -45,8 +62,6 @@ information will assist with development and maintenance.
 This information was initially hosted on a page at [[https://mawsonlakes.org][MawsonLakes.Org]] (WorkPress),
 but it has been moved to a github repository to allow better development
 workflow based access.
-
-
 
 - [[https://heltec.org/project/wifi-lora-32-v3/][Product Page]]
 - Price : US18.90 (from Heltec, Jan 2023)
