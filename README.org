@@ -239,7 +239,7 @@ The size, appearance, pin layout and power pins remain unchanged, but the GPIO s
 
 *** Processor Datasheet
 
-[[file:esp32-s3_datasheet_en.pdf]]
+[[file:espressif-esp32-s3/esp32-s3_datasheet_en.pdf]]
 
 ** LoRa Radio Hardware
 LoRa chip changed from SX1276 to SX1262. The main differences are:
