@@ -238,8 +238,7 @@ The LoRa crystal oscillator is upgraded to temperature compensated crystal oscil
 The size, appearance, pin layout and power pins remain unchanged, but the GPIO sequence has changed. Please refer to Pinout diagram.
 
 *** Processor Datasheet
-
-[[file:espressif-esp32-s3/esp32-s3_datasheet_en.pdf]]
+[[file:espressif-esp32-s3/esp32-s3_datasheet_en.pdf]] Version 1.5, 2022
 
 ** LoRa Radio Hardware
 LoRa chip changed from SX1276 to SX1262. The main differences are:
@@ -255,6 +254,9 @@ Ultra-low-consumption receiving current, SX1278 receiving current is 10.8mA, SX1
 LoRa in V2: https://www.semtech.com/products/wireless-rf/lora-connect/sx1276
 
 LoRa in V3: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262
+
+*** Radio Datasheet
+[[file:semtech-sx1261-2/sx1261-2.pdf]] Rev 2.2 - DS.SX1261-2.W.APP -  Dec 2024
 
 * Software Development
 ** Software Development Libraries
